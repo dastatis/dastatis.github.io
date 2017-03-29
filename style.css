@@ -51,7 +51,7 @@ p {
 #header {
   margin: 0 auto 0 auto;
   width: 100%;
-  height: 110px;
+  height: 60px;
   text-align: center;
   background-image: url(img/header.jpg);
   background-repeat: repeat-x;
@@ -255,7 +255,7 @@ p {
 #contents h2 {
   height: 33px;
   margin: 0 0 7px 0;
-  padding: 15px 0 0 44px;
+  padding: 15px 0 0 0;
   font-size: 16px;
   color: #583822;
   background-image: url(img/titlebar2.gif);
