@@ -1,10 +1,10 @@
 @charset "UTF-8"
 
 
-/*------ ƒy[ƒW‘S‘Ì‚Ìw’è ------*/
+/*------ ãƒšãƒ¼ã‚¸å…¨ä½“ã®æŒ‡å®š ------*/
 
 body{
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "MS P ƒSƒVƒbƒN", "MS P Gothic", sans-Serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "MS P ã‚´ã‚·ãƒƒã‚¯", "MS P Gothic", sans-Serif;
 	margin: 0;
 	padding: 0;
 	font-size: 13px;
@@ -36,7 +36,7 @@ p {
   letter-spacing: 1px;
 }
 
-/*---------- ƒƒCƒ“ ----------*/
+/*---------- ãƒ¡ã‚¤ãƒ³ ----------*/
 
 #main {
   width: 100%;
@@ -46,7 +46,7 @@ p {
   background-image: url(img/main_back.gif);
 }
 
-/*---------- ƒwƒbƒ_[ ----------*/
+/*---------- ãƒ˜ãƒƒãƒ€ãƒ¼ ----------*/
 
 #header {
   margin: 0 auto 0 auto;
@@ -222,7 +222,7 @@ p {
   background-color: #e1dabf;
 }
 
-/*---------- ƒRƒ“ƒeƒ“ƒc ----------*/
+/*---------- ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ ----------*/
 
 #container {
   width: 885px;
@@ -234,7 +234,7 @@ p {
 }
 
 
-/*---------- ƒƒCƒ“ƒRƒ“ƒeƒ“ƒc ----------*/
+/*---------- ãƒ¡ã‚¤ãƒ³ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ ----------*/
 
 #contents {
   float: right;
@@ -260,7 +260,7 @@ p {
   padding: 15px 0 0 44px;
   font-size: 16px;
   color: #583822;
-  background-image: url(img/titlebar.png);
+  background-image: url(img/titlebar2.gif);
   background-repeat: no-repeat;
 }
 
@@ -526,7 +526,7 @@ td.table_line {
   padding : 12px 14px 8px 14px;
 }
 
-/*---------- ƒtƒbƒ^[ ----------*/
+/*---------- ãƒ•ãƒƒã‚¿ãƒ¼ ----------*/
 
 #footer {
   clear: both;
