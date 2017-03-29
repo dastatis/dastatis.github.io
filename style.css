@@ -550,7 +550,7 @@ td.table_line {
 
 /*---------- メニュー ----------*/
 
-#menu {
+/*---------- #menu {
   float: left;
   margin: 0 0 15px 0;
   padding: 0;
@@ -558,7 +558,7 @@ td.table_line {
   text-align: left;
   letter-spacing: 1px;
 }
-
+ ----------*/
 .menulist {
   margin: 0 0 28px 0;
   padding: 5px 2px 0px 5px;
