@@ -229,8 +229,7 @@ p {
   margin: 0 auto 0 auto;
   overflow: hidden;
   padding: 15px 10px 6px 5px;
-  background: #ffffff url(img/side_yback.jpg);
-  background-repeat: repeat-y;
+  background: white;
 }
 
 
@@ -241,7 +240,7 @@ p {
   margin: 0;
   padding: 5px 0 5px 0;
   font-size: 13px;
-  width: 885px;
+  width: 870px;
   letter-spacing: 1px;
   text-align: left;
   line-height: 180%;
