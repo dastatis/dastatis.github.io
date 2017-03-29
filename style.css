@@ -236,11 +236,10 @@ p {
 /*---------- メインコンテンツ ----------*/
 
 #contents {
-  float: right;
   margin: 0;
   padding: 5px 0 5px 0;
   font-size: 13px;
-  width: 870px;
+  width: 850px;
   letter-spacing: 1px;
   text-align: left;
   line-height: 180%;
