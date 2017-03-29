@@ -246,11 +246,11 @@ p {
   background-color: white;
 }
 
-/* #contents #pannavi { */
+/* #contents #pannavi {
   margin: 0 0 5px 0;
   padding: 0 0 8px 0;
   font-size: 12px;
-}
+} */
 
 #contents h2 {
   height: 33px;
@@ -262,7 +262,7 @@ p {
   background-repeat: no-repeat;
 }
 
-/* #contents h2.page_title { */
+/* #contents h2.page_title {
   height: 32px;
   margin: 0 0 18px 0;
   padding: 18px 0 0 22px;
@@ -270,7 +270,7 @@ p {
   color: #4c1800;
   background-image: url(img/page_title.gif);
   background-repeat: no-repeat;
-}
+} */
 
 #contents h3 {
   margin: 12px 2px 10px 2px;
@@ -325,7 +325,7 @@ p {
   font-size: 13px;
 }
 
-/* #contents .gray_bg { */
+/* #contents .gray_bg {
   margin: 18px 2px 18px 2px;
   padding: 2px 8px 2px 18px;
   line-height: 180%;
@@ -336,9 +336,9 @@ p {
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   background-color: #eeeeee;
-}
+} */
 
-/* #contents .gray_bg_contact { */
+/* #contents .gray_bg_contact { 
   margin: 18px 2px 18px 2px;
   padding: 2px 8px 2px 18px;
   line-height: 180%;
@@ -350,9 +350,9 @@ p {
   border-left: solid 1px #dddddd;
   background-image: url(img/contact_btn_bg.gif);
   background-repeat: repeat-x;
-}
+} */
 
-/* #contents .voice_bg { */
+/* #contents .voice_bg { 
   margin: 18px 2px 18px 2px;
   padding: 2px 8px 2px 18px;
   line-height: 180%;
@@ -363,7 +363,7 @@ p {
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   background-color: #f8f4e6;
-}
+} */
 
 #contents span.big {
   font-size: 16px;
