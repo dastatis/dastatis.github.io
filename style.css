@@ -149,8 +149,8 @@ p {
 
 
 #header-menu {
-  width: auto;
-  margin: 4px 0 0 0;
+  width: 150px;
+  margin: 0;
   padding: 0;
   height: 45px;
   text-align: left;
