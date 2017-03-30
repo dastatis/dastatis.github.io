@@ -149,7 +149,7 @@ p {
 
 
 #header-menu {
-  width: 150px;
+  width: auto;
   margin: 0;
   padding: 0;
   height: 45px;
@@ -174,7 +174,7 @@ p {
   list-style-type: none;
   float:left;
   color: #ffffff;
-	background-position: left center;
+  background-position: left center;
 }
 
 #header-menu li a {
