@@ -273,16 +273,14 @@ p {
   background-repeat: no-repeat;
 } */
 
-#contents h2.info {
+#info p {
+  margin: 18px 0 18px 0;
+  padding: 0 2px 0 30px;
+  line-height: 190%;
+  font-size: 13px;
   overflow: scroll;   /* スクロール表示 */ 
   width: 870px;
   height:183px;
-  margin: 0 0 7px 0;
-  padding: 15px 0 0 30px;
-  font-size: 16px;
-  color: #583822;
-  background-image: url(img/titlebar2.gif);
-  background-repeat: no-repeat;
 }
 
 #contents h3 {
