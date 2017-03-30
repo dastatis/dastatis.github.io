@@ -170,10 +170,11 @@ p {
 }
 
 #header-menu li {
-  display: inline;
+  display: block;
   list-style-type: none;
-
+  float:left;
   color: #ffffff;
+	background-position: left center;
 }
 
 #header-menu li a {
@@ -202,7 +203,7 @@ p {
   border-left-style: solid;
   border-left-color: #d6c6af;
   padding: 6px 28px 3px 28px;
-}
+}	
 
 #header-menu span.sub {
   color: #cccccc;
