@@ -276,7 +276,13 @@ p {
 #contents h2.info {
   overflow: scroll;   /* スクロール表示 */ 
   width: 870px;
-	height:150px;
+  height:183px;
+  margin: 0 0 7px 0;
+  padding: 15px 0 0 30px;
+  font-size: 16px;
+  color: #583822;
+  background-image: url(img/titlebar2.gif);
+  background-repeat: no-repeat;
 }
 
 #contents h3 {
