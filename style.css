@@ -261,6 +261,7 @@ p {
   color: #583822;
   background-image: url(img/titlebar2.gif);
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 /* #contents h2.page_title {
