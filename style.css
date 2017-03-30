@@ -273,6 +273,12 @@ p {
   background-repeat: no-repeat;
 } */
 
+#contents h2.info {
+  overflow: scroll;   /* スクロール表示 */ 
+  width: 870px;
+	height:150px;
+}
+
 #contents h3 {
   margin: 12px 2px 10px 2px;
   padding: 16px 10px 9px 30px;
