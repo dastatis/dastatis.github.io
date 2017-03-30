@@ -586,7 +586,12 @@ td.table_line {
   font-size: 13px;
 }
 
-
+#contents li.biography_txt2 {
+  margin: 18px 0 18px 150px;
+  padding: 0 2px 0 150px;
+  line-height: 190%;
+  font-size: 15px;
+}
 
 /*---------- フッター ----------*/
 
