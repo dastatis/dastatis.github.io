@@ -4,7 +4,7 @@
 /*------ ページ全体の指定 ------*/
 
 body{
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS P ゴシック", "MS P Gothic", sans-Serif;
+	font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  Meiryo, Osaka, "MS P ゴシック", "MS P Gothic", sans-Serif;
 	margin: 0;
 	padding: 0;
 	font-size: 13px;
