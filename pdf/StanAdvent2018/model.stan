@@ -20,3 +20,4 @@ model {
   target += normal_lpdf(eta | 0, 1);
   target += normal_lpdf(y | theta, sigma);
 }
+
