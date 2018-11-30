@@ -1,7 +1,7 @@
 data {
-  int<lower=0> J;         // ŠwZ‚Ì”
-  real y[J];              // „’è‚³‚ê‚Ä‚¢‚é‹³ˆç‚ÌŒø‰Ê
-  real<lower=0> sigma[J]; // ‹³ˆç‚ÌŒø‰Ê‚Ì•W€Œë·
+  int<lower=0> J;         // å­¦æ ¡ã®æ•°
+  real y[J];              // æ¨å®šã•ã‚Œã¦ã„ã‚‹æ•™è‚²ã®åŠ¹æœ
+  real<lower=0> sigma[J]; // æ•™è‚²ã®åŠ¹æœã®æ¨™æº–èª¤å·® 
 }
 
 parameters {
