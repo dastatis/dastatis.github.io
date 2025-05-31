@@ -1,0 +1,136 @@
+﻿## Terminalにて
+## 諸々アップデート
+sudo apt update 
+sudo apt upgrade 
+
+## Rを導入する
+sudo apt install r-base
+R
+
+## Ubuntuのバージョンを調べる
+cat /etc/os-release
+
+## Rの最新版を入れ直す
+## そのために、cranのサイトを登録する
+echo -e "\n## For R package"  | sudo tee -a /etc/apt/sources.list
+
+echo "deb https://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)-cran35/" | sudo tee -a /etc/apt/sources.list
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+sudo apt update
+sudo apt install r-base
+
+R
+
+## RStudio Serverの導入
+sudo apt-get install gdebi-core
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5042-amd64.deb
+sudo gdebi rstudio-server-1.2.5042-amd64.deb
+
+## rstudio server にログインするユーザ名を定義.ここでは「rstudio」にしている
+sudo adduser rstudio
+
+# パスワードの設定を要求される
+# Enter new UNIX password: 
+# Retype new UNIX password: 
+#上記を入力すると、このユーザ名のパスワードを定義する画面がでてくる。
+＃ なので,パスワードを決めて、打ち込む
+
+## Rstudio Serverのステータスを確認できる。
+sudo rstudio-server status
+
+## tidyverseやrstanの準備
+sudo apt-get install libcurl4-openssl-dev libssl-dev libxml2-dev build-essential g++
+sudo apt update
+sudo apt upgrade
+sudo R
+
+## tidyverseのinstall
+## R consoleにて(installにこれが居るかも)
+Sys.setenv(R_INSTALL_STAGED = FALSE)
+
+## さらにrstanのさらなる準備(Ubuntu consoleにて)
+sudo add-apt-repository -y "ppa:marutter/rrutter"
+sudo add-apt-repository -y "ppa:marutter/c2d4u"
+sudo apt-get update
+sudo R
+
+## R consoleにて
+install.packages("devtools")
+remotes::install_github("stan-dev/rstan", ref = "develop", subdir = "rstan/rstan", build_opts = "")
+
+## Python(Anaconda)の導入
+## Terminalにて
+sudo wget http://repo.continuum.io/archive/Anaconda3-4.0.0-Linux-x86_64.sh 
+bash Anaconda3-4.0.0-Linux-x86_64.sh
+
+source ~/.bashrc
+
+## jupyter関連のセキュリティの設定
+cd ~
+jupyter notebook --generate-config
+cd .jupyter
+## .jupyterディレクトリにいることを確認して以下
+openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem
+
+python
+
+## Pythonにて
+
+from notebook.auth import passwd; passwd()
+## 登録したpasswordを覚えておく
+## ‘sha1:~~’の～～の部分をメモしておく
+quit() ## pythonを閉じる
+
+## Terminalにて
+cd .jupyter
+vi jupyter_notebook_config.py
+  ## 編集モードになるので、　i を押して、以下を入力し、Escキーを押し、:wqを押すと保存されて終了する
+  
+  # OpenSSLで作ったファイルへのパス
+  # dhojo@instance-3の@より前のdhojoが僕のusername
+  # これを以下のURL内に置き換える
+  c.NotebookApp.certfile = u'/home/dhojo/.jupyter/mycert.pem'
+  c.NotebookApp.keyfile  = u'/home/dhojo/.jupyter/mykey.key'
+  
+  # どのIPアドレスからのアクセスも受け入れる
+  c.NotebookApp.ip = '0.0.0.0'
+  
+  # passwd()コマンドで作ったパスワードのハッシュを貼る
+  c.NotebookApp.password = u'sha1:22d9227hoge'
+  
+  # 勝手にブラウザを起動しない
+  c.NotebookApp.open_browser = False
+  
+  # 外部からアクセスするためのポート番号を指定する
+  c.NotebookApp.port = 8888
+  
+## 最後に :wq を入力し、保存して終了
+
+jupyter notebook
+
+## Wolfram engineの導入 (Jupyter notebookに)
+## 事前にHPでライセンス登録をしておくと早い
+sudo wget https://account.wolfram.com/download/public/wolfram-engine/desktop/LINUX
+sudo bash LINUX 
+
+## WolframLanguageForJupyterを用意する
+git clone https://github.com/WolframResearch/WolframLanguageForJupyter.git
+cd WolframLanguageForJupyter/
+wolframscript configure-jupyter.wls add
+
+
+## アクティベートしていないと、上記が出るので、アクティベートする
+wolframscript –activate
+wolframscript configure-jupyter.wls add ##再度
+
+jupyter kernelspec list
+cd ~ 
+jupyter notebook
+
+## Wolfram engine起動
+wolframscript
+
+
+
